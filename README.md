@@ -19,18 +19,18 @@ The code is intentionally minimal and educational, making it easy to understand 
 
 ### **1. Block Class**
 Each block contains:
-- `index`
-- `timestamp`
-- `data`
-- `previous_hash`
-- `nonce`
-- `hash`
+- index
+- timestamp
+- data
+- previous_hash
+- nonce
+- hash
 
 It computes its own hash using SHA-256.
 
 ### **2. Proof of Work**
 The block increments its nonce until the hash starts with a given number of zeros  
-(`difficulty = 4` → hash must start with `"0000"`).
+(difficulty = 4 → hash must start with "0000").
 
 ### **3. Blockchain Class**
 Stores:
